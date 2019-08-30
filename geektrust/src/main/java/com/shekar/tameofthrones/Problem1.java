@@ -1,8 +1,13 @@
 package com.shekar.tameofthrones;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Problem1 {
+
+    private HashMap<String, String> kingdomEmblem;
+
+    private HashMap<String, HashMap<Character, Integer>> kingdomEmblemCharCounts;
 
     public static void main(String[] args) {
 
@@ -18,6 +23,11 @@ public class Problem1 {
 
         checkOutput();
 
+    }
+
+    public void setupInput() {
+        kingdomEmblem = new HashMap<>();
+        kingdomEmblem.put("LAND", "panda");
     }
 
     public void solution(String[] input) {
